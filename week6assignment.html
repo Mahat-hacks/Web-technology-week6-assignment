@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleek Responsive Interactive Page</title>
+  <link rel="stylesheet" href="week6.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <div class="logo">⚡SleekUI</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#form">Sign Up</a></li>
+      </ul>
+      <button id="menuToggle" class="menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Experience Next-Level Interactivity</h1>
+    <p>Built with precision. Designed to impress. Fully responsive.</p>
+    <button id="themeToggle" class="btn-primary">🌙 Toggle Dark Mode</button>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features">
+    <h2>Interactive Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Counter Game 🎮</h3>
+        <p>Click to test your reflexes</p>
+        <div class="counter">
+          <button id="decrement">−</button>
+          <span id="count">0</span>
+          <button id="increment">+</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Tabbed Interface 🗂️</h3>
+        <div class="tabs">
+          <button class="tab active" data-tab="1">Tab 1</button>
+          <button class="tab" data-tab="2">Tab 2</button>
+          <button class="tab" data-tab="3">Tab 3</button>
+        </div>
+        <div id="tabContent" class="tab-content">Content for Tab 1</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <h2>FAQ Section</h2>
+    <div class="faq-item">
+      <button class="faq-question">What makes this sleek? ▼</button>
+      <div class="faq-answer">Responsiveness, interactivity, and elegant design.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Is it mobile-friendly? ▼</button>
+      <div class="faq-answer">Yes, optimized for any screen size.</div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="form" class="form-section">
+    <h2>Sign Up</h2>
+    <form id="signupForm" novalidate>
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      <small class="error"></small>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <small class="error"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" required minlength="6">
+      <small class="error"></small>
+
+      <button type="submit" class="btn-primary">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 SleekUI · All Rights Reserved</p>
+  </footer>
+
+  <script src="week6.js"></script>
+</body>
+</html>
